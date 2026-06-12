@@ -15,7 +15,7 @@ class _HomePageState extends State<HomePage> {
       body: Column(
         children: [
           Text("Data", style: TextStyle(fontSize: 100)),
-          Text("TypeData", style: TextStyle(fontSize: 100)),
+          Text("TypeData", style: TextStyle(fontSize: 50)),
         ],
       ),
     );
