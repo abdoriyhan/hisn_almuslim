@@ -30,6 +30,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations: # 👈  هذا السطر لدعم اللغات
+    sdk: flutter
+  intl: ^0.20.2          # 👈  هذا السطر لمعالجة النصوص والتمرير
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -79,10 +82,11 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  generate: true
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - images/
+    - assets/images/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -118,16 +122,16 @@ flutter_native_splash:
   #color: "#0E5C46"
   #color_dark: "#0E5C46"
 
-  image: images/logo.png
-  background_image: images/background.png
-  branding: images/branding.png
+  image: assets/images/logo.png
+  background_image: assets/images/background.png
+  branding: assets/images/branding.png
 
-  image_dark: images/logo_dark.png
-  background_image_dark: images/background_dark.png
-  branding_dark: images/branding_dark.png
+  image_dark: assets/images/logo_dark.png
+  background_image_dark: assets/images/background_dark.png
+  branding_dark: assets/images/branding_dark.png
 
   android_12:
     color: "#FCE293"
-    image: images/android_logo.png
-    branding: images/android_branding.png
+    image: assets/images/android_logo.png
+    branding: assets/images/android_branding.png
     icon_background_color: "#0E5C46"
