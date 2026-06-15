@@ -1,5 +1,6 @@
 {
   "appTitle": "حصن المسلم",
   "welcomeMessage": "مرحباً بك في شريكك التأميني",
-  "loginButton": "تسجيل الدخول"
+  "loginButton": "تسجيل الدخول",
+  "changeButton": "Change to English"
 }

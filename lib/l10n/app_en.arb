@@ -1,5 +1,6 @@
 {
   "appTitle": "Hisn Al Muslim",
   "welcomeMessage": "Welcome to your insurance partner",
-  "loginButton": "Login"
+  "loginButton": "Login",
+  "changeButton": "تغيير إلى العربية"
 }

@@ -30,9 +30,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_localizations: # 👈  هذا السطر لدعم اللغات
+  flutter_localizations: # 👈    لدعم اللغات
     sdk: flutter
-  intl: ^0.20.2          # 👈  هذا السطر لمعالجة النصوص والتمرير
+  intl: ^0.20.2          # 👈    لمعالجة النصوص والتمرير
+  provider: ^6.1.2 # لإدارة حالة تغيير اللغة فوراً
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -114,6 +115,9 @@ flutter:
     - family: blackops
       fonts:
         - asset: assets\fonts\BlackOpsOne-Regular.ttf
+    - family: mada
+      fonts:
+        - asset:  assets\fonts\Mada-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

@@ -16,4 +16,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get loginButton => 'تسجيل الدخول';
+
+  @override
+  String get changeButton => 'Change to English';
 }
