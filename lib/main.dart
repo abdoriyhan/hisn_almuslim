@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:hisn_almoslim/my_home_page.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:hisn_almoslim/l10n/app_localizations.dart';
 
 void main() {
+  // 1. This line forces Google Fonts to only use bundled asset fonts
+  GoogleFonts.config.allowRuntimeFetching = false;
+
   runApp(const MyApp());
 }
 
@@ -13,10 +17,15 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    final TextTheme textTheme = Theme.of(context).textTheme;
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Hisn Al Muslim',
       theme: ThemeData(
+        // The all app font will be this font
+        textTheme: GoogleFonts.acmeTextTheme(textTheme).copyWith(
+          bodyMedium: GoogleFonts.oswald(textStyle: textTheme.bodyMedium),
+        ),
         appBarTheme: AppBarTheme(
           backgroundColor: Colors.green,
           foregroundColor: Colors.yellow,
