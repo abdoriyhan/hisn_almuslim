@@ -52,7 +52,7 @@ class MyApp extends StatelessWidget {
           foregroundColor: Colors.yellow,
         ),
         primaryColor: Colors.blue,
-        //useMaterial3: true,
+        useMaterial3: true,
       ),
 
       /*
